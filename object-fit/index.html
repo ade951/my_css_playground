@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>控制图像纵横比</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<h1>控制图像纵横比</h1>
+<pre>
+CSS3为此提供了简易的答案，该方案基本完成。
+CSS图像值和替换内容模块（Image Values and Replaced Content module）草案（dev.w3.org/csswg/css3-images）定义了一个叫"object-fill"的属性。
+该模块还有一个相关属性 —— object-position，用来设置元素内容的纵横位置。
+</pre>
+<div class="box">
+    <img src="../public/images/loli400_300.jpg">
+    <p>object-fit: contain</p>
+</div>
+<div class="box">
+    <img id="demo2" src="../public/images/loli400_300.jpg">
+    <p>object-fit: cover</p>
+</div>
+<div class="box">
+    <img id="demo3" src="../public/images/loli400_300.jpg">
+    <p>object-position: -10px top</p>
+</div>
+</body>
+</html>
