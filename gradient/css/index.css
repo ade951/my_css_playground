@@ -1,0 +1,16 @@
+.box{
+    width:200px;
+    height:200px;
+    border: solid;
+    background: #eee;
+    display: inline-block;
+}
+#demo1{
+    background: linear-gradient(silver, gray);
+}
+#demo2{
+    background: linear-gradient(silver, #eee, gray);
+}
+#demo3{
+    background: linear-gradient(45deg, silver, black);
+}
