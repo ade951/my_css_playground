@@ -14,3 +14,20 @@
 #demo3{
     background: linear-gradient(45deg, silver, black);
 }
+#demo4{
+    background: linear-gradient(45deg, silver 50%, black 50%);
+    background-size: 50px;
+}
+#demo5{
+    background: linear-gradient(30deg, silver 50%, black 50%);
+    background-size: 50px;
+}
+#demo6{
+    background: linear-gradient(45deg, silver 25%, gray 25%, gray 50%,
+     silver 50%, gray 75%, gray 75%);
+    background-size: 50px;
+}
+#demo7{
+    background: linear-gradient(45deg,red 10%,orange 30%,yellow 50%,green 80%,blue);
+    background-size: 50px;
+}
