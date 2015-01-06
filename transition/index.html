@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf8">
+	<title>选项卡效果 - CSS3动画</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+		border:0;
+	}
+	.wrapper{
+		width:200px;
+		max-height:250px;
+		border:1px solid #ccc;
+	}
+	h3{
+		height:30px;
+		line-height:30px;
+		background:-webkit-linear-gradient(top,#fff,#f0f0f0);
+	}
+	.content{
+		width:200px;
+		height:0px;
+		background:#666666;
+		transition:all 0.8s ease-in;
+		color:#fff;
+		overflow:hidden; 
+		line-height:25px;
+	}
+	.title{
+		display:none;
+	}
+	/*  E ~ F 通用兄弟选择器  */
+	.title:checked ~ .content {
+		width:100%; height:220px;
+	}
+	</style>
+</head>
+<body>
+	<h1>CSS3写的<em>选项卡效果</em>，jquery的slideUp和slideDown效果</h1>
+	参考自：<a href="http://tieba.baidu.com/p/2263485793?fr=ala0&pstaala=1">http://tieba.baidu.com/p/2263485793?fr=ala0&pstaala=1</a>
+	<div class="wrapper">
+		<input type="radio" id="title1" class="title" name="title" checked />
+		<label for="title1"><h3>标题一</h3></label>
+		<div class="content">大家好，欢迎来到Github</div>
+	</div>
+	<div class="wrapper">
+		<input type="radio" id="title2" class="title" name="title" />
+		<label for="title2"><h3>标题二</h3></label>
+		<div class="content">我是小剑伯</div>
+	</div>
+	<div class="wrapper">
+		<input type="radio" id="title3" class="title" name="title" />
+		<label for="title3"><h3>标题三</h3></label>
+		<div class="content">我在玩CSS3</div>
+	</div>
+	<div class="wrapper">
+		<input type="radio" id="title4" class="title" name="title" />
+		<label for="title4"><h3>标题四</h3></label>
+		<div class="content">希望大家能共同进步</div>
+	</div>
+	<br>
+	<div>
+		<h2>再送一个CSS常用选择器列表<h2>
+		<img src="../images/css_selectors.png">
+		<p><a href="http://www.w3cplus.com/css3/basic-selectors">http://www.w3cplus.com/css3/basic-selectors</a></p>
+	</div>
+</body>
+</html>
