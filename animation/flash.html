@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="utf8">
+	<style type="text/css"> 
+	*{margin:0; padding:0; border:0;}
+
+	.contain{width:100%; height:50px; position:relative; margin:100px auto 0px; overflow:hidden;}
+
+	.slide{position:absolute; width:100%; text-align:center; line-height:50px; font-size:40px; font-weight:bold; color:blue; font-family:"微软雅黑","楷体";}
+
+	@-webkit-keyframes flash {
+		0%{opacity:1; top:0px;}
+		3%{opacity:0; top:0px;}
+		7%{opacity:0; top:-50px;}
+		10%{opacity:1; top:-50px;}
+		13%{opacity:0; top:-50px;}
+		17%{opacity:0; top:-100px;}
+		20%{opacity:1; top:-100px;}
+		23%{opacity:0; top:-100px;}
+		27%{opacity:0; top:-150px;}
+		30%{opacity:1; top:-150px;}
+		33%{opacity:0; top:-150px;}
+		37%{opacity:0; top:-200px;}
+		40%{opacity:1; top:-200px;}
+		43%{opacity:0; top:-200px;}
+		47%{opacity:0; top:-250px;}
+		50%{opacity:1; top:-250px;}
+		53%{opacity:0; top:-250px;}
+		57%{opacity:0; top:-300px;}
+		60%{opacity:1; top:-300px;}
+		63%{opacity:0; top:-300px;}
+		67%{opacity:0; top:-350px;}
+		70%{opacity:1; top:-350px;}
+		73%{opacity:0; top:-350px;}
+		77%{opacity:0; top:-400px;}
+		80%{opacity:1; top:-400px;}
+		83%{opacity:0; top:-400px;}
+		87%{opacity:0; top:-450px;}
+		90%{opacity:1; top:-450px;}
+		93%{opacity:0; top:-450px;}
+		97%{opacity:0; top:-500px;}
+		100%{opacity:1; top:-500px;}
+	}
+	.slide{-webkit-animation-name:flash;-webkit-animation-duration:30s;-webkit-animation-timing-function:linear;-webkit-animation-fill-mode:both;}
+
+	.slide:hover{-webkit-animation-play-state:paused;}
+	</style>
+</head>
+<body>
+	参考自：<a href="http://tieba.baidu.com/p/2263485793">http://tieba.baidu.com/p/2263485793</a> 7楼
+	<div class="contain">
+		<div class="slide">
+			大家好<br />
+			欢迎来到CSS吧<br />
+			热烈欢迎进驻<br />
+			大家一起交流<br />
+			共同进步<br />
+			我是css吧主圣龙骑士<br />
+			我为css吧代言 ←_← <br />
+			和谐交流<br />
+			探讨前端<br />
+			oh~ year~<br />
+			<a href="http://tieba.baidu.com/f?kw=css">点击进入css吧</a><br />
+		</div>
+	</div>
+</body>
+</html>
+

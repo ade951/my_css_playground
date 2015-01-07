@@ -13,6 +13,10 @@ var articles = [
 	},
 	{
 		link: 'https://ade951.github.io/my_css_playground/animation/', 
-		title: 'animation动画（关键帧）'
+		title: 'animation动画（物体移动效果）'
+	},
+	{
+		link: 'https://ade951.github.io/my_css_playground/animation/flash.html', 
+		title: 'animation动画（文字闪烁效果）'
 	}
 ];
