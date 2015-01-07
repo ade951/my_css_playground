@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>CSS3 animation</title>
+<style>
+body{
+	width:500px;
+	height:300px;
+} /*设置body大小，让动画div在有限空间内运动*/
+
+div{
+	position:relative; /*设置position让div可以设置left和top进行动画*/
+	width:100px;/*下面的设置都是把div设置为圆形，并且加上阴影，与这次介绍的动画没有关联*/
+	height:100px; 
+	border-radius:100px; 
+	border:4px solid #fff; 
+	box-shadow:0px 0px 25px #ff66cc,0px 0px 20px #ff66cc inset; 
+	color:#ffccff; 
+	text-align:center; 
+	line-height:100px; 
+	font-size:160px; 
+	text-shadow:0px 0px 15px #ff66cc;
+
+	-webkit-animation:myFirst 10s linear infinite normal; /*animation设置，设置为10s钟完成一次动画效
+	果，速度线性，无限次播放，正常方向*/}
+
+	@-webkit-keyframes myFirst{/*设置动画名称为myFirst,与上面的animation-name要保持一致*/
+	0%{left:0%; top:0%; -webkit-transform:rotate(0turn);} /*transform超出了本次介绍范围，这里
+	是设置圆形转动效果的属性*/
+	25%{left:100%; top:30%; -webkit-transform:rotate(3turn);}
+	50%{left:50%; top:100%; -webkit-transform:rotate(0turn);}
+	75%{left:0%; top:100%; -webkit-transform:rotate(3turn);}
+	100%{left:0%; top:0%; -webkit-transform:rotate(0turn);}
+}
+</style>
+</head>
+<body>
+	<div>*</div>
+</body>
+</html>
