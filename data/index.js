@@ -18,5 +18,9 @@ var articles = [
 	{
 		link: 'https://ade951.github.io/my_css_playground/animation/flash.html', 
 		title: 'animation动画（文字闪烁效果）'
+	},
+	{
+		link: 'https://ade951.github.io/my_css_playground/music_player/', 
+		title: '纯CSS画的音乐播放器'
 	}
 ];

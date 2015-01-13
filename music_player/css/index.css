@@ -1,0 +1,18 @@
+#player{
+    width:500px;
+    background:-webkit-gradient(linear, left top, left bottom, 
+    from(#4a4a4a),
+    to(#232323));
+    border-radius:50px;
+    height:100px;
+}
+#player>div{
+    display:inline-block;
+}
+
+#play-pause-btns, #next-previous-btns, #volume{
+    width:100px;
+}
+#seek-bar{
+    width:200px;
+}
