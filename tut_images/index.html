@@ -200,6 +200,28 @@
 	-webkit-box-shadow: inset 1px 0 2px rgba(0, 0, 0, .5), inset 1px -1px 0 rgba(0, 0, 0, .2), inset 5px 1px 0 rgba(255, 255, 255, .3), inset 4px 0 0 rgba(0, 0, 0, .8);
 	box-shadow: inset 1px 0 2px rgba(0, 0, 0, .5), inset 1px -1px 0 rgba(0, 0, 0, .2), inset 5px 1px 0 rgba(255, 255, 255, .3), inset 4px 0 0 rgba(0, 0, 0, .8);
 }
+#previous-btn-check{
+	display: none;
+}
+label[for="previous-btn-check"]{
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 60px;
+	height: 36px;
+	z-index: 3;
+
+	display: block;
+	cursor: pointer;
+}
+#previous-btn-check:checked ~ #next-previous-btns #previous-btn{
+    -webkit-box-shadow: inset 1px 0 2px rgba(0, 0, 0, .5), inset 1px -1px 0 rgba(0, 0, 0, .2);
+       -moz-box-shadow: inset 1px 0 2px rgba(0, 0, 0, .5), inset 1px -1px 0 rgba(0, 0, 0, .2);
+            box-shadow: inset 1px 0 2px rgba(0, 0, 0, .5), inset 1px -1px 0 rgba(0, 0, 0, .2);
+}
+#previous-btn-check:checked ~ #next-previous-btns:before{
+	display:none;
+}
 
 #next-btn {
 	position: absolute;
@@ -219,6 +241,28 @@
 	-moz-box-shadow: inset -1px 0 2px rgba(0, 0, 0, .5), inset -1px -1px 0 rgba(0, 0, 0, .2), inset -5px 1px 0 rgba(255, 255, 255, .3), inset -4px 0 0 rgba(0, 0, 0, .8);
 	-webkit-box-shadow: inset -1px 0 2px rgba(0, 0, 0, .5), inset -1px -1px 0 rgba(0, 0, 0, .2), inset -5px 1px 0 rgba(255, 255, 255, .3), inset -4px 0 0 rgba(0, 0, 0, .8);
 	box-shadow: inset -1px 0 2px rgba(0, 0, 0, .5), inset -1px -1px 0 rgba(0, 0, 0, .2), inset -5px 1px 0 rgba(255, 255, 255, .3), inset -4px 0 0 rgba(0, 0, 0, .8);
+}
+#next-btn-check{
+	display: none;
+}
+label[for="next-btn-check"]{
+	position: absolute;
+	top: 3px;
+	left: 63px;
+	width: 60px;
+	height: 36px;
+	z-index: 3;
+
+	display: block;
+	cursor: pointer;
+}
+#next-btn-check:checked ~ #next-previous-btns #next-btn{
+	-webkit-box-shadow: inset -1px 0 2px rgba(0, 0, 0, .5), inset -1px -1px 0 rgba(0, 0, 0, .2);
+	   -moz-box-shadow: inset -1px 0 2px rgba(0, 0, 0, .5), inset -1px -1px 0 rgba(0, 0, 0, .2);
+	        box-shadow: inset -1px 0 2px rgba(0, 0, 0, .5), inset -1px -1px 0 rgba(0, 0, 0, .2);
+}
+#next-btn-check:checked ~ #next-previous-btns:after{
+	display:none;
 }
 
 #previous-btn .button-icon {
@@ -569,11 +613,18 @@
 		<div id="play-pause-btns">
 			<a href="#" id="play-btn"><span class="button-icon">▶</span></a>
 		</div>
-		
+
+		<!-- 把这两个radio放在这里(#next-previous-btns前面)是
+		为了能用CSS在radio的不同状态下选中#next-previous-btns和#previous-btn、#next-btn -->
+		<input type="radio" id="previous-btn-check" name="next-previous-btns" checked="checked">
+		<input type="radio" id="next-btn-check" name="next-previous-btns">
 		<div id="next-previous-btns">
 			<a href="#" id="previous-btn"><span class="button-icon">◀◀</span></a>
+			<label for="previous-btn-check"></label>
+
 			<a href="#" id="next-btn"><span class="button-icon">▶▶</span></a>
-		</div>	
+			<label for="next-btn-check"></label>
+		</div>
 		
 		<div id="seek-bar">
 			<div id="seek-fill"></div>
