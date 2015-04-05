@@ -1,3 +1,24 @@
+.box{
+    margin: 10px;
+}
+/*先写一些组件*/
+#play-pause-btns-sample{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,.4), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -4px 7px rgba(0,0,0,.4), inset 0 -3px 7px rgba(255,255,255,.15);
+    background: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 80, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))) #999;
+}
+/*上一个，下一个按钮*/
+#next-previous-btns-sample {
+    width: 80px;
+    height: 50px;
+    border-radius: 50px 0 0 50px;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.25))) #999;
+    box-shadow: inset 1px 0 2px rgba(0,0,0,.5), inset 1px -1px 0 rgba(0,0,0,.2), inset 5px 1px 0 rgba(255,255,255,.3), inset 4px 0 0 rgba(0,0,0,.8);
+    transform: rotate(-3deg);
+}
+/*播放器开始*/
 #player{
     width:500px;
     background:-webkit-gradient(linear, left top, left bottom, 
@@ -5,6 +26,15 @@
     to(#232323));
     border-radius:50px;
     height:100px;
+}
+#player:before{
+    content: '';
+    display: block;
+    width: 500px;
+    height: 100px;
+    border-radius: 200px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.15), 0 1px 0 rgba(255,255,255,.15) inset, 0 -1px 0 rgba(0,0,0,.5) inset, 0 -1px 0 rgba(0,0,0,.5);
+    position: absolute;
 }
 #player>div{
     display:inline-block;
