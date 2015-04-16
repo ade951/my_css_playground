@@ -687,3 +687,67 @@ input[name=seek-bar-level]{
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+/* 为音量调节器添加点击效果*/
+input[name=volume-level]{
+    display: none;
+}
+label[for^=volume-level]{
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#volume-level1:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+#volume-level2:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-70deg);
+}
+#volume-level3:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+}
+#volume-level4:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+#volume-level5:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+#volume-level6:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+#volume-level7:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+#volume-level8:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+#volume-level9:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+}
+#volume-level10:checked ~ #volume-knob .button-icon{
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
