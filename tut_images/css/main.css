@@ -403,6 +403,60 @@ label[for="next-btn-check"]{
     border-radius: 20px 20px 0 0;
 }
 
+/* 为seekbar添加点击效果(拉动不知道怎么做) */
+#seek-bar-level0:checked ~ #seek-fill{
+    width: 0%;
+}
+#seek-bar-level0:checked ~ #seek-knob{
+    left: 0%;
+}
+#seek-bar-level1:checked ~ #seek-fill{
+    width: 20%;
+}
+#seek-bar-level1:checked ~ #seek-knob{
+    left: 20%;
+}
+#seek-bar-level2:checked ~ #seek-fill{
+    width: 40%;
+}
+#seek-bar-level2:checked ~ #seek-knob{
+    left: 40%;
+}
+#seek-bar-level3:checked ~ #seek-fill{
+    width: 60%;
+}
+#seek-bar-level3:checked ~ #seek-knob{
+    left: 60%;
+}
+#seek-bar-level4:checked ~ #seek-fill{
+    width: 80%;
+}
+#seek-bar-level4:checked ~ #seek-knob{
+    left: 80%;
+}
+#seek-bar-level5:checked ~ #seek-fill{
+    width: 100%;
+}
+#seek-bar-level5:checked ~ #seek-knob{
+    left: 100%;
+}
+label[for^=seek-bar-level]{
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 20%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+}
+label[for=seek-bar-level0]{
+    position: absolute;
+    z-index: 2;
+    width: 10%;
+}
+input[name=seek-bar-level]{
+    display: none;
+}
 
 
 /* Seek Knob */
