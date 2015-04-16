@@ -105,6 +105,30 @@
 	margin: 0 0 0 28px;
 }
 
+/* 添加点击 播放/暂停 效果*/
+#play-btn .button-icon-pause{
+	display: none;
+	letter-spacing: -11px;
+	font-size: 32px;
+}
+#play-pause-btns-check{
+	display: none;
+}
+#play-pause-btns-check:checked ~ #play-btn .button-icon-play{
+	display: none;
+}
+#play-pause-btns-check:checked ~ #play-btn .button-icon-pause{
+	display: block;
+}
+#label-for-play-pause-btns-check{
+	position: absolute;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
 #play-btn:before {
 	content: '';
 	display: block;
@@ -611,7 +635,12 @@ label[for="next-btn-check"]{
 <div id="main">
 	<div id="player">	
 		<div id="play-pause-btns">
-			<a href="#" id="play-btn"><span class="button-icon">▶</span></a>
+			<label for="play-pause-btns-check" id="label-for-play-pause-btns-check"></label>
+			<input type="checkbox" id="play-pause-btns-check"/>
+			<a href="#" id="play-btn">
+				<span class="button-icon button-icon-play">▶</span>
+				<span class="button-icon button-icon-pause">▏▏</span>
+			</a>
 		</div>
 
 		<!-- 把这两个radio放在这里(#next-previous-btns前面)是
