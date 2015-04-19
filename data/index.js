@@ -20,7 +20,7 @@ var articles = [
 		title: 'animation动画（文字闪烁效果）'
 	},
 	{
-		link: 'https://ade951.github.io/my_css_playground/music_player/', 
-		title: '纯CSS画的音乐播放器'
+		link: 'https://ade951.github.io/my_css_playground/tut_images/',
+		title: 'CSS3音乐播放器（可点击）'
 	}
 ];
